@@ -30,8 +30,8 @@ namespace Student_Info
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,14 +93,14 @@ namespace Student_Info
             this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(81, 43, 129);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(81, 43, 129);
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
@@ -116,13 +116,14 @@ namespace Student_Info
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 62;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.YellowGreen;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(245, 240, 250);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(139, 92, 184);
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(236, 227, 246);
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(802, 602);
@@ -218,6 +219,7 @@ namespace Student_Info
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 22);
             this.label1.Name = "label1";
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(81, 43, 129);
             this.label1.Size = new System.Drawing.Size(316, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student Information";
@@ -228,13 +230,14 @@ namespace Student_Info
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label2.Location = new System.Drawing.Point(22, 84);
             this.label2.Name = "label2";
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label2.Size = new System.Drawing.Size(157, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Last Name ";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(232, 221, 243);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
@@ -260,11 +263,13 @@ namespace Student_Info
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.DimGray;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSave.Location = new System.Drawing.Point(334, 615);
             this.btnSave.Name = "btnSave";
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.Size = new System.Drawing.Size(118, 53);
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
@@ -273,11 +278,13 @@ namespace Student_Info
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.DimGray;
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.Location = new System.Drawing.Point(176, 615);
             this.btnCancel.Name = "btnCancel";
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.Size = new System.Drawing.Size(118, 53);
             this.btnCancel.TabIndex = 24;
             this.btnCancel.Text = "Cancel";
@@ -286,11 +293,13 @@ namespace Student_Info
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.DimGray;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAdd.Location = new System.Drawing.Point(321, 16);
             this.btnAdd.Name = "btnAdd";
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.Size = new System.Drawing.Size(118, 53);
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add";
@@ -327,6 +336,7 @@ namespace Student_Info
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(22, 515);
             this.label8.Name = "label8";
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label8.Size = new System.Drawing.Size(86, 32);
             this.label8.TabIndex = 19;
             this.label8.Text = "Email";
@@ -337,6 +347,7 @@ namespace Student_Info
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label7.Location = new System.Drawing.Point(262, 361);
             this.label7.Name = "label7";
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label7.Size = new System.Drawing.Size(110, 32);
             this.label7.TabIndex = 18;
             this.label7.Text = "Section";
@@ -347,6 +358,7 @@ namespace Student_Info
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label6.Location = new System.Drawing.Point(14, 361);
             this.label6.Name = "label6";
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label6.Size = new System.Drawing.Size(215, 32);
             this.label6.TabIndex = 17;
             this.label6.Text = "Academic Level";
@@ -357,6 +369,7 @@ namespace Student_Info
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label5.Location = new System.Drawing.Point(262, 215);
             this.label5.Name = "label5";
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label5.Size = new System.Drawing.Size(109, 32);
             this.label5.TabIndex = 16;
             this.label5.Text = "Gender";
@@ -367,6 +380,7 @@ namespace Student_Info
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label4.Location = new System.Drawing.Point(22, 215);
             this.label4.Name = "label4";
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label4.Size = new System.Drawing.Size(188, 32);
             this.label4.TabIndex = 15;
             this.label4.Text = "Middle Name ";
@@ -377,6 +391,7 @@ namespace Student_Info
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label3.Location = new System.Drawing.Point(250, 84);
             this.label3.Name = "label3";
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(56, 35, 75);
             this.label3.Size = new System.Drawing.Size(158, 32);
             this.label3.TabIndex = 14;
             this.label3.Text = "First Name ";
@@ -404,6 +419,7 @@ namespace Student_Info
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(12, 103);
             this.label9.Name = "label9";
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(81, 43, 129);
             this.label9.Size = new System.Drawing.Size(127, 37);
             this.label9.TabIndex = 24;
             this.label9.Text = "Search:";
@@ -414,17 +430,20 @@ namespace Student_Info
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(5, 23);
             this.label10.Name = "label10";
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(81, 43, 129);
             this.label10.Size = new System.Drawing.Size(420, 52);
             this.label10.TabIndex = 25;
             this.label10.Text = "Student Information";
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.DimGray;
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEdit.Location = new System.Drawing.Point(529, 30);
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.Size = new System.Drawing.Size(129, 55);
             this.btnEdit.TabIndex = 26;
             this.btnEdit.Text = "Edit";
@@ -433,23 +452,28 @@ namespace Student_Info
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.DimGray;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDelete.Location = new System.Drawing.Point(697, 30);
             this.btnDelete.Name = "btnDelete";
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.Size = new System.Drawing.Size(117, 55);
             this.btnDelete.TabIndex = 27;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(176, 615);
             this.button2.Name = "button2";
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Size = new System.Drawing.Size(118, 53);
             this.button2.TabIndex = 24;
             this.button2.Text = "Add";
@@ -457,7 +481,7 @@ namespace Student_Info
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(232, 221, 243);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.textBox1);
@@ -480,11 +504,13 @@ namespace Student_Info
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DimGray;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(107, 63, 160);
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(321, 16);
             this.button3.Name = "button3";
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.Size = new System.Drawing.Size(118, 53);
             this.button3.TabIndex = 23;
             this.button3.Text = "Add";
@@ -616,7 +642,7 @@ namespace Student_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
+            this.BackColor = System.Drawing.Color.FromArgb(245, 240, 250);
             this.ClientSize = new System.Drawing.Size(1306, 780);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -691,4 +717,3 @@ namespace Student_Info
         private System.Windows.Forms.TextBox textBox4;
     }
 }
-

@@ -35,23 +35,45 @@ namespace Student_Info
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            var acadLevels = await _studentDataServices.GetAcadLevelsAsync();
-            var sections = await _studentDataServices.GetSectionsAsync();
-            var students = await _studentDataServices.GetAllStudentsAsync();
-
-            PopulateAcadLevelDropdown(acadLevels);
-            PopulateSectionDropdown(sections);
-            DisplayStudents(students);
-
             ResetButtons();
             EnableFields(false);
+
+            try
+            {
+                var acadLevels = await _studentDataServices.GetAcadLevelsAsync();
+                var sections = await _studentDataServices.GetSectionsAsync();
+                var students = await _studentDataServices.GetAllStudentsAsync();
+
+                PopulateAcadLevelDropdown(acadLevels);
+                PopulateSectionDropdown(sections);
+                DisplayStudents(students);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Unable to load student data from the live service.\n\n{ex.Message}",
+                    "Connection Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private async void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            var search = txtSearch.Text.Trim();
-            var results = await SearchStudentsAsync(search);
-            DisplayStudents(results);
+            try
+            {
+                var search = txtSearch.Text.Trim();
+                var results = await SearchStudentsAsync(search);
+                DisplayStudents(results);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Unable to search students.\n\n{ex.Message}",
+                    "Connection Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
 
@@ -186,9 +208,10 @@ namespace Student_Info
                 var students = await _studentDataServices.GetAllStudentsAsync();
                 DisplayStudents(students);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while adding the student.");
+                MessageBox.Show($"Unable to add the student.\n\n{ex.Message}", "Save Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -219,9 +242,10 @@ namespace Student_Info
                 var students = await _studentDataServices.GetAllStudentsAsync();
                 DisplayStudents(students);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while updating the student.");
+                MessageBox.Show($"Unable to update the student.\n\n{ex.Message}", "Save Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -235,9 +259,10 @@ namespace Student_Info
                 var students = await _studentDataServices.GetAllStudentsAsync();
                 DisplayStudents(students);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while removing the student.");
+                MessageBox.Show($"Unable to remove the student.\n\n{ex.Message}", "Delete Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
